@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.11.0.xsd">
+    <!-- Configure the database connection here -->
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/sample</url>
+        <user>sample</user>
+        <password>dolphins</password>
+    </jdbc>
+
+    <generator>
+        <name>org.jooq.codegen.JavaGenerator</name>
+        <database>
+            <name>org.jooq.meta.postgres.PostgresDatabase</name>
+            <inputSchema>public</inputSchema>
+        </database>
+        <generate>
+            <immutablePojos>true</immutablePojos>
+            <pojos>true</pojos>
+            <pojosEqualsAndHashCode>true</pojosEqualsAndHashCode>
+            <pojosToString>true</pojosToString>
+            <serializablePojos>false</serializablePojos>
+            <records>false</records>
+            <indexes>false</indexes>
+            <keys>false</keys>
+            <tables>false</tables>
+        </generate>
+        <target>
+            <packageName>com.github.yaseenkadir.jipai</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
