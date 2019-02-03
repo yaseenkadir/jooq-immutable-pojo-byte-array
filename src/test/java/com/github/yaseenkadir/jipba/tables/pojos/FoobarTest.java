@@ -1,4 +1,4 @@
-package com.github.yaseenkadir.jipai.tables.pojos;
+package com.github.yaseenkadir.jipba.tables.pojos;
 
 import org.junit.jupiter.api.Test;
 
